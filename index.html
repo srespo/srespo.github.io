@@ -15,7 +15,6 @@ background-size: cover;
 background-position: center center;
 min-height: 400px;
 padding: 2em;
-
 }
 
   
@@ -32,15 +31,23 @@ padding: 2em;
 border: 10px; 
 }
 
+fieldset
+{text-align: center;
+  t
+text-orientation: upright;}
 
-content {
+input
+{text: capitalize;}
+
+content 
+  {
     width:400px;
     height:400px;
-    
-}
+  }
+
 
 .container
- { background-size: cover;
+ {background-size: cover;
     background-position: center center;
   background: linear-gradient(180deg, white,teal, black);
 } 
@@ -56,6 +63,7 @@ content {
     font-family: "Nunito", sans-serif;
     text-align: center;
 }
+
 </style>
 </head>
 <body>
@@ -68,39 +76,52 @@ content {
 </div>
 
 <div class="panel" id="panel2">
-    <p> gently down the stream </p>
-</div>    
+    <p>gently down the stream</p>
+</div>  
 
 <div class= "panel" id="panel3">
 <p> merrily merrily</p>
+
 <img style="display:none" src="img/fish.jpg" id="fish">
 </div>
 
-
 <div class= "panel" id="panel3">
-<p> merrily merrily</p>
+<p>merrily merrily</p>
 </div>
 
-<div class = "panel" id="panel4">
-<p>life is but a dream</p>
+<div class="panel" id="panel4">
+
+<span><p id="dream">life is but a dream</p>
+<form id="my-form">
+<fieldset>
+<label id="agree">do you agree?</label><input type="checkbox" id="user-agree">
+<span id= 'yes'></span>
+<label>yes</label>
+  <input type="checkbox" id="user-disagree">
+  <span id='no'>nope</span>
+</fieldset>
+  </form>
+</span>
 </div>
 
 
-<div class="panel" id="panel-1">
-<p><blockquote>
-<h1> gently down the stream </h1>
-</blockquote></p>
+
+
+
+
+
 
 </div>
-<div class="poem-panel">
+
+<div class="poem-panel5">
 <h1>merrily merrily
 </h1>
 </div>
-<div class ="poem-panel">
+<div class ="poem-panel6">
 <h1> merrily merrily </h1>
 </div>
-<div class="poem-panel">
-<h1> life is but a dream</h1>
+<div class="poem-panel7">
+<h1>life is but a dream</h1>
 </div>
 
 

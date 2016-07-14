@@ -4,7 +4,4 @@ $(document).ready(function(){     // when the document is ready, I want this fun
     $("#fish").fadeIn()
   });
 
-
 });
-
-

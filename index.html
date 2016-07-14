@@ -3,110 +3,93 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
 </script>
-
-
-<script>
-$(document).ready(function(){
-    $("p").mouseenter(function(){
-        $("p").css("background-color", "yellow");
-});
+<script src="app.js">
 </script>
-
-</head>
 <style> 
+
 body
 {
-background-image: url("http://cliparts.co/cliparts/rTn/GnM/rTnGnMkGc.png");
-} 
-.container
-{background-color: #cccccc;
-position: 0,0;
-height: auto;
-width: auto;
-padding-left: 0;
-padding-right: 0
+display:block;
+width:100%;
+background-size: cover;
+background-position: center center;
+min-height: 400px;
+padding: 2em;
+
+}
+
+  
+
+div
+{display: block;
 }
 
 p
-{
-text-align: center;
+{text-align: center;
 font-family: sans-serif;
 font-size: 30px;
 padding: 2em;
 border: 10px; 
 }
 
-.light {
-  opacity: 0.2; /* Barely see the text over the background */
-}
-.medium {
-  opacity: 0.5; /* See the text more clearly over the background */
-}
-.heavy {
-  opacity: 0.9; /* See the text very clearly over the background */
-}
-.content {
+
+content {
     width:400px;
     height:400px;
-    position:relative;    z-index:1;
+    
 }
-#background
-{background-image: url("http://cliparts.co/cliparts/rTn/GnM/rTnGnMkGc.png");
-height:400px;
-width:400px;
-position: absolute;
-opacity: .9;
-}
-#fixed_item
-{
-    position: fixed;
-    font-size: 40px
-    top: 10px
-    right 20px;
-}
-.poem-panel 
-{ background-color: #ff6678;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 28px;
-    padding-bottom: 20px;
-    margin: 30%;
+
+.container
+ { background-size: cover;
+    background-position: center center;
+  background: linear-gradient(180deg, white,teal, black);
+} 
+
+
+.panel
+{background: rgba(255,255,255,.15);
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    height: 700px;
+    width: 100%;
     font-family: "Nunito", sans-serif;
-    text-align: center
+    text-align: center;
 }
 </style>
 </head>
 <body>
-<!-- this section is about position, nesting containers and opacity-->
+<!--the following is the container for the entire page-->
+<div class= "container">
 
-<!-- when using no specific positioning:-->
+<div class= "panel" id="panel1">
+<p>Row, row, row your boat</p>
 
-<div id="container"> 
-    <div id="content">
-    <h3> this is my text </h3>
-    </div>
-    </div>
 </div>
 
-<!-- when positioning is fixed-->
-
-<div id="fixed-item">
-<p>awefkjndglkj
+<div class="panel" id="panel2">
+    <p> gently down the stream </p>
 </div>    
-</div>
-<div id="content">
-<div class = "poem-panel">
-<h1>row, row, row your boat</h1>
+
+<div class= "panel" id="panel3">
+<p> merrily merrily</p>
+<img style="display:none" src="img/fish.jpg" id="fish">
 </div>
 
 
-<div class="poem-panel">
-<p>
+<div class= "panel" id="panel3">
+<p> merrily merrily</p>
+</div>
+
+<div class = "panel" id="panel4">
+<p>life is but a dream</p>
+</div>
+
+
+<div class="panel" id="panel-1">
+<p><blockquote>
 <h1> gently down the stream </h1>
-</p>
-</div>
-<div class="image">
-<img src="http://cliparts.co/cliparts/pTo/qzy/pToqzykTE.jpg";>
+</blockquote></p>
 
 </div>
 <div class="poem-panel">
@@ -119,12 +102,10 @@ opacity: .9;
 <div class="poem-panel">
 <h1> life is but a dream</h1>
 </div>
-</div>
-<script>
-$( document.body ).click(function() {
-  $( "div:hidden:first" ).fadeIn( "slow" );
-});
-</script>
+
+
 </body>
 
 </html>
+
+//scroll event--> look this up!

@@ -14,7 +14,7 @@ $(document).ready(function(){     // when the document is ready, I want this fun
 
 //Check and un-check a specific radio button:
 <script>
-$("#leftradiobutton").
+$("#leftradiobutton").che
 
 function myFunction() {
     var  = document.getElementById("leftRadio").checked;

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Example</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="form.js"></script>
+</head>
+<body>
+
+<form id="my-form">
+
+<fieldset>
+	<label> Name: </label>
+	<input type="text" id="user-name">
+</fieldset>
+
+<fieldset>
+	<label> Email: </label>
+	<input type="email" id="user-email"></input>
+</fieldset>
+
+<fieldset>
+	<label> Happy? </label>
+	<input type="checkbox" id="user-happy">
+	<span id='smiley'></span>
+</fieldset>
+
+<fieldset>
+	<label>
+	Country
+	</label>
+
+	<select id="user-country">
+		<option value="us">USA</option>
+		<option value="ca">Canada</option>
+		<option value="mx">Mexico</option>
+	</select>
+</fieldset>
+<fieldset>
+	<button id="form-submit">Submit</button>
+	</fieldset>
+</form>
+<div id="summary">
+<p> Your Name Is <span id="name-result"> </span>
+<
+</body>
+</html>

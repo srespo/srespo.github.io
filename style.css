@@ -1,57 +1,119 @@
 body {
-    display: block;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    min-height: 400px;
-    padding: 2em;
+  display: block;
+  background-color: #4CAF60;
+  background-size: cover;
+  background-position: center center;
+  padding: 0;
+  border-style: dotted;
+}
+
+#section-six {
+  background-color: #77ff77;
+  background-position: center;
+}
+
+#weeweeimage {
+  width: 300px;
+  display: none;
+  position: absolute;
+  left: 0px;
+}
+  
+#imgA {
+  border-color: #77ff89;
+  border-width: 2px;
+}
+
+#myContainer {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
 }
 
 
+#myAnimation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
 
 p {
-    font-color: #001199;
+  color: red;
+  margin: 5px;
+  cursor: pointer;
+}
+
+p:hover {
+  background: yellow;
+}
+
+button:hover {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-    font-family: sans-serif;
-    font-size: 50px;
-    padding: 2em;
-    border: 10px;
-}
-p.big
-   {
-    font-size: 200px;
-
-   } 
-fieldset {
-    text-align: center;
-    text-orientation: upright;
-}
-content {
-    width: 400px;
-    height: 400px;
-}
-img {
-    width: 100%;
-    height: auto;
-    
-}
-.container {
-    background-size: cover;
-    background-position: center center;
-    background: linear-gradient(180deg, white, teal, black);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
-{
 
+.section {
+  width: 100%;
+  border-color:#88ff79;
+  border-width: 5px;
+  padding: 10px;
+  width:auto;
+  height:auto;
+  text-align: center;
+  position: center center;
 }
+
+#section-two {
+  background-color: #f88376;
+  height: auto
+  width: auto;
+}
+
+#home {
+  position:relative;
+}
+
+#section-three {
+  width: inherit;
+  height: inherit;
+  position: center;
+  background-size: cover;
+  background-position: center center;
+  background: linear-gradient(180deg, white, teal, black);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 32px;
+}
+
+
+h2 {
+  position: absolute;
+  text-shadow: 1, #ff5567;
+  font-family: serif;
+  text-align: center middle;
+}
+
+input {
+  position: center;
+}
+
 .panel {
-    background: rgba(255, 255, 255, .15);
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0;
-    height: 700px;
-    width: 100%;
-    font-family: "Nunito", sans-serif;
-    text-align: center;
+  background: rgba(255, 255, 255, .15);
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  height: 700px;
+  width: 100%;
 }
-

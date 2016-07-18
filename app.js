@@ -1,6 +1,6 @@
 
-$(document).ready(function(){
-	$("#section-six").on("mouseenter", function(){
+$(document).ready(function(){     // when the document is ready, I want this function to happen
+	$("#section-five").on("mouseenter", function(){
 		var weeweeimage = $("#weeweeimage");
 		weeweeimage.css('left', -300);
 		weeweeimage.fadeIn();
@@ -10,49 +10,19 @@ $(document).ready(function(){
 			weeweeimage.fadeOut();
 		});
 	});
-	
-$("#panel3").on("mouseenter", function()
-  {
-    $("#fish").fadeIn()
-  });
 
-     // when the document is ready, I want this function to happen
-$("#bobthebutton").click(function(){
-	var randomRed = generateRandomColor();
-	var randomGreen = generateRandomColor();
-	var randomBlue = generateRandomColor();
-	var randomColor = "rgb"(randomRed + "," + randomGreen + "," + randomBlue + ",");
-	$("#section-seven").css("background-color", randomColor);
+$( "p" ).click(function() {
+  $( this ).slideUp();
 });
 
-function generateRandomColor() {
-	return Math.round(Math.random) * 255;
-}
 
-$('#myMove').click(myMove);
+$("#sendname").click(function(){
+	window.alert("firstname: " + $("#firstname").val() + "\n" + "lastname: " + $("#lastname").val());
+});
+	
 
-function myMove() {
-  var elem = document.getElementById("weeweeimage");
-  var pos = 0;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++;
-      //elem.style.top = pos + 'px';
-      elem.style.left = pos + 'px';
-    }
-  }
-}
 
-// $("#form-submit").click(function(){
-//  if($("user-agree").is(":checked"))//
 
-//three images, each one has a radio button below it.
-// when left radio button is clicked, block gets larger until it fills screen
-// when middle button is clicked, block gets wider until is fills the width of screen
-//when right button is clicked, image shrinks
 
 //Check and un-check a specific radio button:
 

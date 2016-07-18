@@ -1,15 +1,29 @@
 body {
-  display: block;
-  background-color: #4CAF60;
-  background-size: cover;
-  background-position: center center;
-  padding: 0;
-  border-style: dotted;
+  background-color: #7745ff;
+
+}
+
+p {
+    color: red;
+    margin: 5px;
+    cursor: pointer;
+}
+
+p:hover {
+  background: yellow;
+}
+
+
+h1 {
+  font-size: 1.125em;
+  font-family: 'Open Sans', 'sans-serif';
 }
 
 #section-six {
   background-color: #77ff77;
   background-position: center;
+  height: auto;
+  background-image: url(http://www.julietangus.com/wp-content/uploads/2015/11/BoroughMarketTomatoes.jpg)
 }
 
 #weeweeimage {
@@ -17,18 +31,6 @@ body {
   display: none;
   position: absolute;
   left: 0px;
-}
-  
-#imgA {
-  border-color: #77ff89;
-  border-width: 2px;
-}
-
-#myContainer {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  background: yellow;
 }
 
 
@@ -40,33 +42,18 @@ body {
 }
 
 p {
-  color: red;
-  margin: 5px;
-  cursor: pointer;
-}
-
-p:hover {
-  background: yellow;
-}
-
-button:hover {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  background-color: transparent;
+  margin: 20px;
+  padding: 10px; 
 }
 
 
-.section {
+section {
   width: 100%;
   border-color:#88ff79;
   border-width: 5px;
   padding: 10px;
-  width:auto;
+  width:100vh;
   height:auto;
   text-align: center;
   position: center center;
@@ -105,8 +92,10 @@ h2 {
   text-align: center middle;
 }
 
-input {
+input, button {
   position: center;
+  font-size: 24px;
+  line-height:24px;
 }
 
 .panel {

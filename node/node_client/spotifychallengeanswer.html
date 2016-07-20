@@ -1,0 +1,73 @@
+<html>
+<!--this is a search of the spotify database plus a user interface for input-->
+<head>
+<style>
+.console-line
+{
+    font-family: monospace;
+    margin: 2px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+   
+$(document).ready(function(){
+
+            $("#api_search").click(function(){
+                $.ajax({
+                    url: "https://api.spotify.com/v1/search",
+                    data:{
+                        q: $("#api_field").val() + ":" + $("#api_term").val(),
+                        type: $("#api_return").val(),
+                        limit: "20"
+                    },
+                    success: ajaxHandler
+                });
+            });
+
+        });
+
+function ajaxHandler(data)
+        {
+            console.log(data);
+
+            var typeString = $("#api_return").val() + "s";
+
+            $("#api_result").text("");
+
+            var results = data[typeString].items; //Array of albums
+            for(var i = 0; i < results.length; i++)
+            {
+                $("#api_result").append(results[i].name + "\n");
+            }
+        }
+</script>
+
+<body>
+<textarea id="api_result" cols=60 rows=20> </textarea>
+    <fieldset>
+        <label>Search Term:</label>
+        <input type="text" id="api_term">
+    </fieldset>
+    <fieldset>
+        <label>Return Only:</label>
+        <select id="api_return">
+            <option value="album">Albums</option>
+            <option value="artist">Artists</option>
+            <option value="track">Songs</option>
+            <option value="playlist">Playlists</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <label>Search Only:</label>
+        <select id="api_field">
+            <option value="album">Albums</option>
+            <option value="artist">Artists</option>
+            <option value="song">Songs</option>
+            <option value="playlist">Playlists</option>
+        </select>
+    </fieldset>
+    <button id="api_search">Search the API</button>
+</body>
+</html>

@@ -3,28 +3,44 @@ body
 	font-size: 13px;
 	font-family: helvetica, arial, sans-serif;
 	background-color: #CCC;
+	display: block;
+	padding-right: 10px;
 
 }
 
+
+img
+{object-fit: contain;
+	break-before: always;
+}
+ 
 #chat-log
 {
-	list-style: none;
-	background-color: lightcoral;
-	margin: 0px;
-	border: solid 1px #000;
-	position: absolute;
+	background: lightcoral none repeat scroll 0 0;
+	border: solid 1px;
 	width: 100%;
-	
-}
+	margin-bottom: 90px;
+	position: relative;
+	top:0px; bottom: 0px; overflow-y: auto;}
+
+#chat-log ul img;
 
 
 #chat-log ul{
-	background color: #FFF;
+	position: absolute;
+	top: 100px
+	bottom: 25px; 
 	list-style: none;
-	margin: 5px;
-	padding: 0px;
+	background color: #FFF;
+	overflow-y: scroll;
+	box-sizing: content-box;
+
+
 
 }
+
+img
+
 #chat-log ul li.them-line {
 	background-color: lavender;
 }

@@ -7,6 +7,7 @@ var socket = io("http://localhost:3000"); //any time we reference this variable 
 			success: function(data){
 				$("#chat-log ul li").remove();
 				for(var i=0;i<data.length;i++)
+
 		{
 			var msg = data[i];
 			if(msg.username == $("#chat-name").val()) {
@@ -33,13 +34,20 @@ $("#chat-form").submit(function(){
 });
 
 socket.on("chat message", function(msg){
+	$("#ul").height();
 	if(msg.username == $("#chat-name").val()) {
 		$("#chat-log ul").append("<li class='me-line'><b>" + msg.username + "</b>: " + msg.text + "</li>");
 	} else {
 		$("#chat-log ul").append("<li class='them-line'><b>" + msg.username + "</b>: " + msg.text + "</li>");
 	}
+
 });
-
-
 })
+
+
+
+
+
+
+
 //this above code WORKS!as client side server file

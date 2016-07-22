@@ -9,14 +9,12 @@ body
 #chat-log
 {
 	list-style: none;
-	background-color: #ee1437;
+	background-color: lightcoral;
 	margin: 0px;
 	border: solid 1px #000;
-	position: fixed;
-	top: 0px
-	bottom: 90%;
-	width: 50%;
-	overflow-y: scroll;
+	position: absolute;
+	width: 100%;
+	
 }
 
 
@@ -27,10 +25,10 @@ body
 	padding: 0px;
 
 }
-#chat-log ul li.them-line
-{
-	background-color: #ff7745;
+#chat-log ul li.them-line {
+	background-color: lavender;
 }
+
 form
 {
 	background-color: #FFF;
@@ -43,6 +41,7 @@ form
 
 form #chat-input
 {
+	position: relative;
 	border: none;
 	padding: 10px;
 	width: 90%;

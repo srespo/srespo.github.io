@@ -9,11 +9,10 @@ var socket = io("http://localhost:3000"); //any time we reference this variable 
 				for(var i=0;i<data.length;i++)
 		{
 			var msg = data[i];
-			if(msg.username == $("#chat-name").val())
-	{
-	$("#chat-log ul").append("<li class='me-line'><b>" + msg.username + "</b>: " + msg.text + "</li>");
-}else{
-	$("#chat-log ul").append("<li class='them-line'><b>" + msg.username + "</b>: " + msg.text + "</li>");
+			if(msg.username == $("#chat-name").val()) {
+				$("#chat-log ul").append("<li class='me-line'><b>" + msg.username + "</b>: " + msg.text + "</li>");
+			} else {
+				$("#chat-log ul").append("<li class='them-line'><b>" + msg.username + "</b>: " + msg.text + "</li>");
 			}
 
 		}
@@ -30,16 +29,17 @@ $("#chat-form").submit(function(){
 
 	socket.emit("chat message", messageObject);
 	$("#chat-input").val(""); //set the value of the text box to "nothing" after message is submitted
-	return false;//dont reload the page
+	return false; //dont reload the page
 });
 
 socket.on("chat message", function(msg){
-	if(msg.username == $("#chat-name").val())
-	{
-	$("#chat-log ul").append("<li class='me-line'><b>" + msg.username + "</b>: " + msg.text + "</li>");
-}else{
-	$("#chat-log ul").append("<li class='them-line'><b>" + msg.username + "</b>: " + msg.text + "</li>");
-}
+	if(msg.username == $("#chat-name").val()) {
+		$("#chat-log ul").append("<li class='me-line'><b>" + msg.username + "</b>: " + msg.text + "</li>");
+	} else {
+		$("#chat-log ul").append("<li class='them-line'><b>" + msg.username + "</b>: " + msg.text + "</li>");
+	}
 });
+
+
 })
 //this above code WORKS!as client side server file

@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>chat client</title>
-	<link rel="stylesheet" type="text/css" href="chat_client.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
-<script type="text/javascript" src="chat_client.js"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-
-  
-</head>
-<body>
-<div id="chat-meta">
-<input type="text" id="chat-name" placeholder="username"><button id="chat-start">Start Chatting</button></input>
-
-</div>
-<div class="chat-body" id="chat-log">
-<ul>
-</ul>
-</div>
-
-<div>
-<form id="chat-form">
-	<fieldset>
-		<input type="text" id="chat-input">
-			<button>Send</button>
-	</fieldset>
-</form>
-</div>
-
+	<head>
+		<title>chat client</title>
+		<link rel="stylesheet" type="text/css" href="chat_client.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+		<script type="text/javascript" src="chat_client.js"></script>
+		
+	</head>
+	<body>
+		<div id="chat-meta">
+			<input type="text" id="chat-name" placeholder="username">
+			<button id="chat-start">Start Chatting</button></input>
+		</div>
+		<div class="chat-body" id="chat-log">
+			<ul class="chat-ul" id="chat-content">
+			</ul>
+		</div>
+		<form id="chat-form">
+			<fieldset>
+				<input type="text" id="chat-input">
+				<button>Send</button>
+			</fieldset>
+		</form>
+	</div>
+	<div id="newItem" style="display:none">
+		<div class="added">
+			<!-- scrollable items can have anything and any amount -->
+			<img src="http://farm1.static.flickr.com/153/399232237_6928a527c1_t.jpg" />
+			<img src="http://farm4.static.flickr.com/3089/2796719087_c3ee89a730_t.jpg" />
+			<h3>New Item</h3>
+		</div>
+	</div>
 </body>
 </html>

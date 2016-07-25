@@ -1,73 +1,62 @@
-body
-{
-	font-size: 13px;
-	font-family: helvetica, arial, sans-serif;
-	background-color: #CCC;
-	display: block;
-	padding-right: 10px;
+body {
+    background-color: lightcoral;
+}
 
+#chat-log {
+    background-color: lightcoral;
+}
+
+ul {
+    position: absolute;
+    list-style: none;
+    width: 50%;
+    overflow-y: scroll;
+    max-height: 100%;
+    background-color: white;
+    font-size: 14px;
+    padding: 20px;
+    margin-bottom: 100px;
 }
 
 
-img
-{object-fit: contain;
-	break-before: always;
-}
- 
-#chat-log
-{
-	background: lightcoral none repeat scroll 0 0;
-	border: solid 1px;
-	width: 100%;
-	margin-bottom: 90px;
-	position: relative;
-	top:0px; bottom: 0px; overflow-y: auto;}
-
-#chat-log ul img;
-
-
-#chat-log ul{
-	position: absolute;
-	top: 100px
-	bottom: 25px; 
-	list-style: none;
-	background color: #FFF;
+/*
+	margin: 24px 29px; 
+	padding: 28px 28px; 
 	overflow-y: scroll;
-	box-sizing: content-box;
-
-
-
-}
-
-img
+	display:inline-flex;
+	margin: 40px 50px 50px;
+	overflow-y: scroll; 
+	#chat-body{
+	overflow:auto;
+	}
+*/
 
 #chat-log ul li.them-line {
-	background-color: lavender;
+    background-color: lavender;
+    border-width: 1px;
+    overflow-wrap: normal;
 }
 
-form
-{
-	background-color: #FFF;
-	width: 100%;
-	bottom: 0px;
-	left: 5px;
-	right: 5px;
-	position:fixed;
+form {
+    background-color: #FFF;
+    width: 100%;
+    bottom: 0px;
+    left: 5px;
+    right: 5px;
+    position: fixed;
+    border-collapse: 0px;
 }
 
-form #chat-input
-{
-	position: relative;
-	border: none;
-	padding: 10px;
-	width: 90%;
-	margin-right: .5%;
+form #chat-input {
+    position: sticky;
+    padding: 10px;
+    width: 90%;
+    margin-right: 5px;
 }
 
-form button
-{
-	width: 9%;
-	background-color: #55ff98;
-	border:none;
-	padding: 10px ;
+form button {
+    width: 30%;
+    background-color: #55ff98;
+    border: none;
+    padding: 10px;
 }

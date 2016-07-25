@@ -41,7 +41,7 @@ $(document).ready(function() {
 
         $("#chat-content img").last().ready().each(function() {
         	console.log(this);
-        	$(this).load(function() {
+        	$(this).ready(function() {
         		getChat();
         	});
         });
